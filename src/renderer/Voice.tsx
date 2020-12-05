@@ -98,7 +98,7 @@ function calculateVoiceAudio(state: AmongUsState, settings: ISettings, me: Playe
 	} else {
 		gain.gain.value = 0;
 	}
-	if (gain.gain.value === 1 && Math.sqrt(Math.pow(panPos[0], 2) + Math.pow(panPos[1], 2)) > 7) {
+	if (gain.gain.value === 1 && Math.sqrt(Math.pow(panPos[0], 2) + Math.pow(panPos[1], 2)) > 1) {
 		gain.gain.value = 0;
 	}
 }
